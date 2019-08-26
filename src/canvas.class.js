@@ -1642,7 +1642,7 @@
       var activeObject = this._activeObject;
 
       if (activeObject) {
-        activeObject._renderControls(ctx);
+        activeObject._renderControls(ctx, this.controlStyle);
       }
     },
 

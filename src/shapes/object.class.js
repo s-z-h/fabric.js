@@ -437,7 +437,7 @@
      * @type Number
      * @default
      */
-    rotatingPointOffset:      40,
+    rotatingPointOffset:      30,
 
     /**
      * When set to `true`, objects are "found" on canvas on per-pixel basis rather than according to bounding box

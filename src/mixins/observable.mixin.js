@@ -33,9 +33,10 @@
       this.__eventListeners = { };
     }
     // one object with key/value pairs was passed
-    if (arguments.length === 1) {
+    // if (arguments.length === 1) {
+    if (typeof eventName === 'object' && typeof handler !== 'function') {
       for (var prop in eventName) {
-        this.on(prop, eventName[prop]);
+        this.on(prop, eventName[prop].bind(handler));
       }
     }
     else {

@@ -16,6 +16,7 @@ var modulesToInclude = buildArgsAsObject.modules ? buildArgsAsObject.modules.spl
 var modulesToExclude = buildArgsAsObject.exclude ? buildArgsAsObject.exclude.split(',') : [];
 
 var distributionPath = buildArgsAsObject.dest || 'dist/';
+// var distributionPath = '/Users/szh/Desktop/vue-read-editor/html/node_modules/fabric/dist/';
 var minifier = buildArgsAsObject.minifier || 'uglifyjs';
 var mininfierCmd;
 
