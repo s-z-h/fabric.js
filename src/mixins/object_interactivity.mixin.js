@@ -250,7 +250,6 @@
       //   ctx.strokeStyle = styleOverride.cornerStrokeColor || this.cornerStrokeColor;
       // }
       this._setLineDash(ctx, styleOverride.cornerDashArray || this.cornerDashArray, null);
-      console.log(ctx.fillStyle, ctx.strokeStyle)
       // top-left
       this._drawControl('tl', ctx, methodName,
         left,
@@ -326,7 +325,6 @@
       }
       angle = typeof angle === 'object' ? angle : []
       angle = angle.map(function(item) { return item * Math.PI })
-      console.log('angle',angle)
       var size = this.cornerSize, stroke = !this.transparentCorners && this.cornerStrokeColor;
       switch (styleOverride.cornerStyle || this.cornerStyle) {
         case 'circle':
